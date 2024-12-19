@@ -1,0 +1,99 @@
+/* Базові стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Контейнер із заголовком і кнопками */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+}
+
+/* Заголовок і опис */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* Контейнер для кнопок */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Загальні стилі кнопок */
+.button {
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Стиль кнопки YouTube */
+.youtube {
+    background-color: #ff0000;
+}
+
+.youtube:hover {
+    background-color: #d60000;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.3);
+}
+
+/* Стиль кнопки Discord */
+.discord {
+    background-color: #7289da;
+}
+
+.discord:hover {
+    background-color: #5b6eae;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(114, 137, 218, 0.3);
+}
+
+/* Адаптивність для маленьких екранів */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .button {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+}
